@@ -13,7 +13,7 @@ public abstract class ProductForSale {
         return quantity * price;
     }
 
-    public abstract void showDetails(),
+    public abstract void showDetails();
 
     public String getType() {
         return type;
