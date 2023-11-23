@@ -5,7 +5,7 @@ public class Bread extends ProductForSale{
 
     @Override
     public void showDetails() {
-        System.out.println("Chocolate{" +
+        System.out.println("Bread{" +
                 "type='" + getType() + '\'' +
                 ", price=" + getPrice() +
                 ", description='" + getDescription() + '\'' +
