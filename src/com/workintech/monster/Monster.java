@@ -11,6 +11,10 @@ public abstract class Monster implements Bleedable, Posionable {
         this.damage = damage;
     }
 
+    public double attack() {
+        return getDamage() + bleed() + poison();
+    }
+
     public String getName() {
         return name;
     }
