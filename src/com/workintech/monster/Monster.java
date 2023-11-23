@@ -1,6 +1,6 @@
 package com.workintech.monster;
 
-public abstract class Monster {
+public abstract class Monster implements Bleedable, Posionable {
     private String name;
     private int hitPoints;
     private double damage;
