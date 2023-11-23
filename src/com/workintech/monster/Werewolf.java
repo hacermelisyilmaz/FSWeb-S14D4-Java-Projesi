@@ -1,8 +1,13 @@
 package com.workintech.monster;
 
-public class Werewolf extends Monster{
+public class Werewolf extends Monster implements Bleedable{
     public Werewolf(String name, int hitPoints, double damage) {
         super(name, hitPoints, damage);
+    }
+
+    @Override
+    public double attack() {
+        return getDamage() + bleed();
     }
 
     @Override
@@ -10,8 +15,4 @@ public class Werewolf extends Monster{
         return 0.25 * getDamage();
     }
 
-    @Override
-    public double poison() {
-        return 0.3 * getDamage();
-    }
 }
