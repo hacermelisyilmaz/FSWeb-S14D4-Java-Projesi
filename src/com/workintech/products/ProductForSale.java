@@ -28,4 +28,14 @@ public abstract class ProductForSale {
     public String getDescription() {
         return description;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("Class: " + getClass().getSimpleName().toUpperCase() + "\n");
+        builder.append("Type: " + type + "\n");
+        builder.append("Price: " + price + "\n");
+        builder.append("Description: " + description + "\n");
+        return builder.toString();
+    }
 }

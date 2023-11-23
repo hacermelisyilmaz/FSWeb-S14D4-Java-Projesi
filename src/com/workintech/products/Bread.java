@@ -9,15 +9,17 @@ public class Bread extends ProductForSale{
 
     @Override
     public void showDetails() {
-        System.out.println("com.workintech.products.Bread{" +
-                "type='" + getType() + '\'' +
-                ", price=" + getPrice() +
-                ", description='" + getDescription() + '\'' +
-                ", is sliced='" + isSliced() + '\'' +
-                "}");
+        System.out.println(super.toString() + this);
     }
 
     public boolean isSliced() {
         return isSliced;
+    }
+
+    @Override
+    public String toString() {
+        return "Bread{" +
+                "isSliced=" + isSliced +
+                '}';
     }
 }

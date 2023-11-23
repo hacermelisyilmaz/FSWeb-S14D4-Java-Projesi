@@ -10,15 +10,17 @@ public class Chocolate extends ProductForSale{
 
     @Override
     public void showDetails() {
-        System.out.println("com.workintech.products.Chocolate{" +
-            "type='" + getType() + '\'' +
-                    ", price=" + getPrice() +
-                    ", description='" + getDescription() + '\'' +
-                    ", weight='" + getWeight() + '\'' +
-                    "}");
+        System.out.println(super.toString() + this);
     }
 
     public int getWeight() {
         return weight;
+    }
+
+    @Override
+    public String toString() {
+        return "Chocolate{" +
+                "weight=" + weight +
+                '}';
     }
 }

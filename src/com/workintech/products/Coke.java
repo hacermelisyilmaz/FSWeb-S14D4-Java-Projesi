@@ -9,15 +9,17 @@ public class Coke extends ProductForSale{
 
     @Override
     public void showDetails() {
-        System.out.println("com.workintech.products.Coke{" +
-                "type='" + getType() + '\'' +
-                ", price=" + getPrice() +
-                ", description='" + getDescription() + '\'' +
-                ", volume='" + getVolume() + '\'' +
-                "}");
+        System.out.println(super.toString() + this);
     }
 
     public int getVolume() {
         return volume;
+    }
+
+    @Override
+    public String toString() {
+        return "Coke{" +
+                "volume=" + volume +
+                '}';
     }
 }
