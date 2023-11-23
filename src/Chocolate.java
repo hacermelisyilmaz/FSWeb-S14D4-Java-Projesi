@@ -1,6 +1,9 @@
 public class Chocolate extends ProductForSale{
-    public Chocolate(String type, double price, String description) {
+    private int weight;
+
+    public Chocolate(String type, double price, String description, int weight) {
         super(type, price, description);
+        this.weight = weight;
     }
 
     @Override
@@ -9,6 +12,11 @@ public class Chocolate extends ProductForSale{
             "type='" + getType() + '\'' +
                     ", price=" + getPrice() +
                     ", description='" + getDescription() + '\'' +
+                    ", weight='" + getWeight() + '\'' +
                     "}");
+    }
+
+    public int getWeight() {
+        return weight;
     }
 }

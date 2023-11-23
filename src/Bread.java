@@ -1,6 +1,8 @@
 public class Bread extends ProductForSale{
-    public Bread(String type, double price, String description) {
+    private boolean isSliced;
+    public Bread(String type, double price, String description, boolean isSliced) {
         super(type, price, description);
+        this.isSliced = isSliced;
     }
 
     @Override
@@ -9,6 +11,11 @@ public class Bread extends ProductForSale{
                 "type='" + getType() + '\'' +
                 ", price=" + getPrice() +
                 ", description='" + getDescription() + '\'' +
+                ", is sliced='" + isSliced() + '\'' +
                 "}");
+    }
+
+    public boolean isSliced() {
+        return isSliced;
     }
 }

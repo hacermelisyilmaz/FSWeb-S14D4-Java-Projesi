@@ -1,6 +1,8 @@
 public class Coke extends ProductForSale{
-    public Coke(String type, double price, String description) {
+    private int volume;
+    public Coke(String type, double price, String description, int volume) {
         super(type, price, description);
+        this.volume = volume;
     }
 
     @Override
@@ -9,6 +11,11 @@ public class Coke extends ProductForSale{
                 "type='" + getType() + '\'' +
                 ", price=" + getPrice() +
                 ", description='" + getDescription() + '\'' +
+                ", volume='" + getVolume() + '\'' +
                 "}");
+    }
+
+    public int getVolume() {
+        return volume;
     }
 }
