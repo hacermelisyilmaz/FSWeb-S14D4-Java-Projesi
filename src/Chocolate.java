@@ -5,6 +5,10 @@ public class Chocolate extends ProductForSale{
 
     @Override
     public void showDetails() {
-
+        System.out.println("Chocolate{" +
+            "type='" + getType() + '\'' +
+                    ", price=" + getPrice() +
+                    ", description='" + getDescription() + '\'' +
+                    "}");
     }
 }
