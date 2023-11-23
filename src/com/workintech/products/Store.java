@@ -1,3 +1,5 @@
+package com.workintech.products;
+
 public class Store {
     public static void main(String[] args) {
         ProductForSale products[] = new ProductForSale[]{

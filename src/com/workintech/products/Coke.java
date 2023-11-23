@@ -1,3 +1,5 @@
+package com.workintech.products;
+
 public class Coke extends ProductForSale{
     private int volume;
     public Coke(String type, double price, String description, int volume) {
@@ -7,7 +9,7 @@ public class Coke extends ProductForSale{
 
     @Override
     public void showDetails() {
-        System.out.println("Coke{" +
+        System.out.println("com.workintech.products.Coke{" +
                 "type='" + getType() + '\'' +
                 ", price=" + getPrice() +
                 ", description='" + getDescription() + '\'' +

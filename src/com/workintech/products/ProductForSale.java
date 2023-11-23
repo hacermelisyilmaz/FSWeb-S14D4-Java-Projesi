@@ -1,3 +1,5 @@
+package com.workintech.products;
+
 public abstract class ProductForSale {
     private String type;
     private double price;

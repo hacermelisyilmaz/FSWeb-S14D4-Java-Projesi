@@ -1,3 +1,5 @@
+package com.workintech.products;
+
 public class Chocolate extends ProductForSale{
     private int weight;
 
@@ -8,7 +10,7 @@ public class Chocolate extends ProductForSale{
 
     @Override
     public void showDetails() {
-        System.out.println("Chocolate{" +
+        System.out.println("com.workintech.products.Chocolate{" +
             "type='" + getType() + '\'' +
                     ", price=" + getPrice() +
                     ", description='" + getDescription() + '\'' +
